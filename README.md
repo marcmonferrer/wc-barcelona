@@ -1,3 +1,18 @@
+## V0.2 — Publicació autoritzada el 20 d’octubre de 2026
+
+Estat actual: formulari publicat per a qualsevol persona amb l’enllaç. Prova real sense sessió de Google enviada amb dades exclusivament sintètiques i registrada al full privat. La web es publica amb el botó Proposa un WC / Propón un baño / Suggest a toilet. Les seccions de preparació següents són evidències històriques i no descriuen l’estat actual.
+
+Web: https://marcmonferrer.github.io/wc-barcelona/
+Formulari públic: https://docs.google.com/forms/d/e/1FAIpQLSfUGNTH0-uSvMNLMz-HDgap_zpu2E-MTdMvb1rgTUKcA_JWTQ/viewform
+
+Autorització final expressa de Marc per obrir la recollida i publicar v0.2. No s’afirma compliment legal certificat ni verificació independent de tots els rols i garanties de Google. Avís breu i detallat en CA/ES/EN visibles abans d’enviar. El text d’esborrany tancat s’ha retirat; les limitacions es mantenen explicades.
+
+Conservació: supressió MANUAL de dades identificatives sis mesos després de resoldre cada proposta, separadament a Forms i Sheets; incloure correus d’aclariment si n’hi ha. No hi ha automatització ni garantia d’esborrat immediat de l’historial/còpies internes de Google. Revisió humana i publicació manual de qualsevol establiment: cap connexió automàtica entre el full i la web.
+
+QA de publicació: formulari anònim, avís en tres idiomes i recepció real al full privat PASS. Verificació de GitHub Pages, commit i regressió pública: s’afegiran després del desplegament. La resposta sintètica de publicació està identificada com a prova i no conté dades personals reals ni establiments reals.
+
+NO COMPROVAT: telèfon físic, zoom real al 200%, lector de pantalla, revisió visual completa i adequació jurídica independent de tots els fluxos de Google. No s’ha executat el qüestionari complet de Facilita RGPD. Cap certificació de compliment ni d’accessibilitat.
+
 # WC Barcelona v0.1 — pilot públic
 
 URL pública verificada: https://marcmonferrer.github.io/wc-barcelona/
@@ -80,3 +95,84 @@ Publicació autoritzada per Marc. Encara NO PUBLICAT: la credencial de GitHub CL
 - NO COMPROVAT: desplegament i funcionament de l’URL pública, zoom real al 200%, lector de pantalla i revisió visual completa de totes les fitxes.
 
 En aquesta preparació només s’ha ampliat aquest README; els quatre fitxers del producte es conserven. No s’ha modificat cap repositori d’X-Ray ni de Porra.
+
+## V0.2 — Proposa un WC (preparació privada, NO PUBLICADA)
+
+Preparada el 20 d’octubre de 2026 a la branca local `v0.2-proposa-wc`, des de `6a01506b450d32bf87edc2e5d56a71cddbe8a589`. No s’ha fet push, merge a main, deploy ni obertura pública del formulari. La v0.1 pública continua amb HTTP 200 i sense el botó nou; main públic conserva el commit base.
+
+### Un formulari i un full privat
+
+Compte verificat al navegador i al connector abans de crear res: `marcmonferrer.ai@gmail.com`. Els permisos de Drive dels dos fitxers mostren només aquest compte com a propietari i `shared: false`.
+
+- Formulari, edició privada: https://docs.google.com/forms/d/1SDCsaIkNDF9yQPKGGiG2zvEXvsOVyfRpYaWgMu4LoB4/edit
+- Vista prèvia del propietari: https://docs.google.com/forms/d/1SDCsaIkNDF9yQPKGGiG2zvEXvsOVyfRpYaWgMu4LoB4/preview
+- Enllaç preparat al botó: https://docs.google.com/forms/d/e/1FAIpQLSfUGNTH0-uSvMNLMz-HDgap_zpu2E-MTdMvb1rgTUKcA_JWTQ/viewform — actualment informa que el document no s’ha publicat; no és una recollida oberta. Cal repetir la prova del destí definitiu quan s’autoritzi publicar.
+- Full de respostes privat: https://docs.google.com/spreadsheets/d/11tHzXIguBjPvYZ6PBl5hrngtBMDYm0OfWiD6flUJocA/edit
+
+El formulari és únic, titulat «♿ WC Barcelona · Proposa un WC», amb preguntes i avisos en CA/ES/EN. Té exactament cinc camps: correu, nom del local i ubicació obligatoris; accés i comentaris opcionals. El correu té validació de format Email i un error traduït; no és recollida de correu verificat de Google. L’accés té només dues opcions i deixar-lo buit significa desconegut. Els comentaris demanen no incloure dades personals ni de salut. No es demanen noms de persones, telèfons, fitxers ni comptes de Google.
+
+El formulari segueix «Not Published / This form isn’t accepting responses». La limitació a una resposta i la recollida de correus verificats estan desactivades; no hi ha resum públic de resultats ni edició de respostes. La confirmació trilingüe explica la revisió humana. S’ha activat «Get email notifications for new responses» per al compte professional; no s’ha enviat cap missatge ni resposta de prova.
+
+La vinculació nativa mostra «View in Sheets». El full només conté la pestanya `Form Responses 1`, amb capçaleres A1:F1: Timestamp i els cinc camps. A2:F2 és buit; zero respostes. No s’ha publicat ni compartit amb participants, ni s’hi han afegit bases de dades o serveis.
+
+### Integració local i circuit humà
+
+Canvi mínim: un enllaç amb aspecte de botó abans de la llista, a `index.html`; sis textos nous a `data.js` (botó i explicació per idioma), i tres regles a `styles.css`. Es reutilitza el renderitzador existent. `app.js`, `favicon.svg`, les dades de les tres fitxes, Maps, avisos, dates, fonts i crèdit Monferrer Lab romanen intactes. La versió pública continua sent v0.1 fins que s’autoritzi el canvi.
+
+Circuit obligatori: proposta al full privat → revisió humana de les dades i els desconeguts → si s’aprova, edició i publicació manual de la fitxa i les traduccions. No hi ha connexió entre el full i `data.js`, ni importació automàtica. Abans de publicar una proposta cal retirar correus i altres dades personals dels comentaris; no convertir «no conec barreres» en una garantia d’accessibilitat. Una resposta d’accés en blanc continua sent desconeguda. Cap contacte amb participants o establiments s’ha executat en aquesta preparació.
+
+### QA executada i límits
+
+- PASS: compte professional verificat; un formulari i un full, privats i amb propietari correcte; notificació de noves respostes activada.
+- PASS: vista prèvia amb cinc preguntes, tres marques d’obligatori, dos radis opcionals d’accés i comentaris de paràgraf opcionals; textos CA/ES/EN. Prova de correu mal format amb text fictici, sense enviar: apareix l’error trilingüe.
+- PASS: vista prèvia de Forms amb amplada CSS observada de 320 px, clientWidth = scrollWidth = 305 px, sense desbordament horitzontal. És una prova en navegador d’escriptori amb viewport mòbil, no en un telèfon físic ni amb lector de pantalla.
+- PASS: web local en CA/ES/EN a 320 i 356 px observats, sense desbordament; tres fitxes, tres Maps, un únic advertiment d’esglaó i crèdit traduït. Botó de 44 px d’alt, amb focus visible per Tab i explicació associada amb `aria-describedby`.
+- PASS: comparació del contingut amb HEAD: totes les dades d’establiments i totes les traduccions preexistents són idèntiques. `node --check app.js`, `node --check data.js` i `git diff --check` correctes. No hi ha lint, typecheck ni build local configurats.
+- PASS: URL de resposta preparada comprovada; informa «aquest document no s’ha publicat». L’enllaç local apunta a aquesta destinació. Activació amb Retorn des de la web local verificada: arriba a aquest URL i Google informa que el document no s’ha publicat. No s’ha habilitat la recollida.
+- PASS: main públic conserva `6a01506b450d32bf87edc2e5d56a71cddbe8a589`; web v0.1 HTTP 200, sense el botó v0.2. No s’ha modificat cap altre projecte.
+- NO COMPROVAT: enviament efectiu sense sessió, registre d’una resposta al full i recepció de la notificació. No s’ha publicat ni obert el formulari per provar-ho. Configuració preparada sense requeriments de login, però pendent de prova anònima quan s’autoritzi.
+- NO COMPROVAT: prova amb telèfon físic, zoom real 200%, lector de pantalla i revisió visual completa. Les mesures del DOM no equivalen a aquestes proves.
+
+### Tancament de privacitat — 20 d’octubre de 2026
+
+Aquesta secció actualitza les evidències inicials de v0.2 descrites més amunt. La prova privada posterior sí que ha verificat recepció, vinculació i notificació; no acredita accés anònim públic.
+
+Responsable confirmat per Marc: Marc Monferrer, persona física, amb marca personal Monferrer Lab. Contacte i exercici de drets: marcmonferrer.ai@gmail.com. Finalitat: revisar propostes de WC, aclarir dubtes i agrair la col·laboració; sense màrqueting ni publicació de dades personals.
+
+Avís breu i informació addicional CA/ES/EN incorporats i rellegits a la vista prèvia del formulari. La informació addicional és un bloc informatiu abans d’Envia; es mantenen només cinc preguntes. Base jurídica preparada: consentiment, art. 6.1.a RGPD, mitjançant l’acció afirmativa d’enviar amb informació prèvia; sense casella addicional. S’expliquen voluntarietat, camps necessaris, retirada sense afectar la licitud anterior, drets d’accés, rectificació, supressió, limitació, oposició quan correspongui i portabilitat, i reclamació davant l’AEPD. No hi ha perfils ni decisions automatitzades.
+
+Conservació confirmada: eliminar dades identificatives de Forms i Sheets sis mesos després de resoldre cada proposta, o abans quan correspongui per retirada o supressió. Procediment manual: anotar a la cel·la de data la resolució i el venciment de sis mesos; revisar els venciments i suprimir separadament a Forms i Sheets. Abans de conservar informació del local, retirar qualsevol dada personal dels comentaris. No s’ha configurat cap automatisme de supressió, ni s’afirma haver executat venciments futurs. Si després hi ha correus d’aclariment, també cal incloure’n les dades identificatives en la revisió de conservació.
+
+Destinataris descrits: responsable i serveis de Google que allotgen i gestionen Forms/Sheets; altres cessions només per obligació legal. Les condicions generals a l’EEE identifiquen Google Ireland Limited; Google descriu possibles tractaments internacionals. Avís CA/ES/EN revisat: Google declara que no actua com a encarregat ni ofereix DPA per als serveis de consum. No s’exigeix un DPA inexistent ni es pressuposa compliment automàtic. **Pendent de revisió jurídica especialitzada abans d’obrir:** determinar els rols reals de Google per als continguts del formulari i la licitud i garanties de comunicar-hi aquestes dades, incloses transferències, drets i conservació. Segons el CEPD els rols depenen de les activitats efectives; una denominació contractual no és decisiva. Si l’operació concreta és un encàrrec, caldrà resoldre les exigències de l’art. 28 RGPD; el consentiment del proposant no les substitueix. Aquesta és una qüestió pendent, no una declaració d’il·legalitat acreditada d’aquest pilot. No s’ha contractat Workspace ni creat serveis o acceptat acords. No es promet allotjament exclusiu a la UE ni esborrat immediat de còpies de seguretat o historial de Google.
+
+### Prova controlada i estat final privat
+
+- PASS: publicació de prova restringida només al propietari; accés de participants restringit, sense notificacions a tercers ni recollida pública.
+- PASS: enviada una única resposta sintètica identificada com «PROVA TÈCNICA V0.2 — NO PUBLICAR», amb correu fictici del domini reservat example.invalid, local i ubicació ficticis; cap dada personal real de participant.
+- PASS: recepció efectiva a Forms i A2:F2 del full vinculat; accés deixat en blanc i conservat com a desconegut. Assajat el circuit de revisió amb resolució de prova «descartar, no publicar» en una nota privada; això no és aprovació humana d’un establiment real.
+- PASS: rebuda i llegida la notificació nativa de Google Forms a marcmonferrer.ai@gmail.com. No s’ha enviat cap correu manual ni cap correu a participants o establiments.
+- PASS: després de la prova, recepció desactivada i formulari despublicat. Vista prèvia final: «Not Published / This form isn’t accepting responses». Permisos de Forms i Sheets tornats a consultar: shared:false i únicament el propietari professional.
+- PASS: amb confirmació expressa de Marc, eliminada només la resposta sintètica restant de Forms; verificat «0 responses / No responses. Publish your form to start accepting responses». Formulari conservat. La còpia de Sheets ja havia estat eliminada per Marc; rellegit A1:F3, amb només capçaleres i sense resposta ni nota de prova. Full existent conservat.
+- PASS: botó local corregit amb l’enllaç canònic de resposta que proporciona Google: https://docs.google.com/forms/d/e/1FAIpQLSfUGNTH0-uSvMNLMz-HDgap_zpu2E-MTdMvb1rgTUKcA_JWTQ/viewform. Sense push, merge ni desplegament. Les tres fitxes i la v0.1 pública es conserven.
+- PASS: avís legal complet comprovat a 320 px: clientWidth i scrollWidth de 305 px, cinc preguntes, tres obligatòries, dos radis i formulari tancat.
+- NO COMPROVAT: enviament sense sessió i accés anònim de principi a fi; cal provar-los quan s’autoritzi l’obertura. La prova restringida no els substitueix.
+- NO COMPROVAT: telèfon físic, zoom real al 200%, lector de pantalla i revisió visual completa. Tampoc s’acredita la purga de l’historial o les còpies internes de Google.
+
+Abans d’obrir: resoldre la revisió jurídica especialitzada de l’ús de Google de consum i ajustar l’avís a les garanties acreditades; obtenir autorització final per obrir el formulari i desplegar el botó. Neteja de prova completada. Cap proposta passa automàticament del full a la web: revisió humana i publicació manual obligatòries.
+
+### Contrast final amb AEPD i Facilita RGPD
+
+- Reconfirmat Forms amb zero respostes i sense publicar. No quedava cap altra resposta sintètica per eliminar; no s’ha eliminat el formulari ni el full.
+- Contrast documental amb les orientacions de Facilita RGPD i el dret d’informació de l’AEPD. No s’ha executat el qüestionari complet de Facilita ni s’ha obtingut cap certificació; l’AEPD adverteix que els seus documents no impliquen compliment automàtic.
+- Avís detallat CA/ES/EN: identitat i contacte, finalitat, consentiment i retirada, camps necessaris/opcionals, sis mesos després de resolució, drets i AEPD, destinataris Google i possibles transferències. Completada també la primera capa amb base jurídica, Google/transferències i referència als drets, sense afegir preguntes.
+- Valoració preliminar: les dades previstes són correu i informació del local, sense categories especials sol·licitades ni perfilat. Això apunta a risc baix, però el text lliure pot rebre dades personals o de salut no demanades; cal retirar-les en la revisió. No s’afirma una avaluació formal de risc completada.
+- Google de consum: no s’exigeix DPA si no hi ha encàrrec. Marc conserva les responsabilitats sobre la recollida, informació, ús, seguretat, drets i supressió de les seves còpies. La declaració de Google no determina per si sola els rols jurídics de totes les operacions. Pendent acreditar per a les respostes del pilot els rols, la licitud de la comunicació i el mecanisme de transferència aplicable; la política general enumera adequació/DPF/clàusules però no prova per si sola cada flux del pilot.
+- Cap prohibició legal concreta d’aquest formulari acreditada amb les fonts consultades. Tampoc queda acreditat el compliment íntegre. No s’imposa contractar assessorament, Workspace o altres serveis; la qüestió pot aclarir-se amb recursos gratuïts de l’AEPD abans d’obrir. Recomanació: mantenir tancat fins a documentar aquesta adequació, concretar les garanties de l’avís i completar les comprovacions operatives pendents.
+- Fonts: https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd ; https://www.aepd.es/derechos-y-deberes/conoce-tus-derechos/derecho-de-informacion ; https://policies.google.com/privacy/frameworks?hl=es . No s’ha publicat cap canvi de la web ni obert el formulari.
+Fonts oficials consultades:
+- Informació de privacitat: https://www.aepd.es/derechos-y-deberes/conoce-tus-derechos/derecho-de-informacion
+- Consentiment: https://www.aepd.es/preguntas-frecuentes/2-tus-obligaciones-como-responsable-del-tratamiento/5-bases-legitimadoras-del-tratamiento/FAQ-0211-segun-el-rgpd-como-debe-solicitarse-el-consentimiento-de-los-interesados-para-tratar-sus-datos-personales
+- Serveis Google de consum i acord d’encàrrec: https://support.google.com/policies/answer/9581826?hl=en
+- Rols efectius, CEPD 07/2020: https://www.edpb.europa.eu/system/files/2023-10/EDPB_guidelines_202007_controllerprocessor_final_en.pdf
+- Política, supressió i transferències Google: https://policies.google.com/privacy i https://policies.google.com/privacy/frameworks
+- Controls de publicació i respostes: https://support.google.com/docs/answer/2839588?hl=en i https://support.google.com/docs/answer/139706?hl=en
