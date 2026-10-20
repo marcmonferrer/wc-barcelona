@@ -1,3 +1,26 @@
+## V0.3 — Vuit experiències personals · 20 d’octubre de 2026
+
+Actualització de contingut autoritzada per Marc: DESPACITO, L’OVELLA NEGRA MARINA, BEERCELONA BAR, BITÀCORA POBLENOU i BAR TRÈBOL s’afegeixen a les tres fitxes originals. Aquesta secció descriu la versió actual; les seccions v0.2 i anteriors són històriques.
+
+Web: https://marcmonferrer.github.io/wc-barcelona/ · Publicació a main amb GitHub Pages. Base revisada: a0efcaff194e73dd50793933e49375a601e885ef. Branca de treball: v0.3-vuit-fitxes.
+
+- Les tres fitxes originals conserven íntegrament les seves dades i textos. Les cinc noves indiquen experiència personal comunicada el 20/10/2026 i data exacta de visita desconeguda; no se’ls atribueix la visita a l’estiu de les originals.
+- DESPACITO: alerta de porta molt estreta abans dels detalls; cap amplada inventada ni garantia per tipus de cadira. BITÀCORA: clau destacada amb un estil neutre diferent de les barreres físiques. Bar Trèbol: Pujades 225 confirmat pel responsable i coincident amb Maps.
+- Text introductori, metadescripcions i avís sense JavaScript sense nombres fixos. Comptador calculat amb places.length i plantilla traduïda. Text general diferencia criteris d’accessibilitat, adequació personal, aproximació i transferències.
+- Mateix formulari de propostes, crèdit Monferrer Lab i arquitectura estàtica. Cap dependència nova. Canvis: data.js, app.js, index.html, una regla necessària a styles.css per la nota de clau i aquest README. Recursos amb ?v=0.3 per evitar la regressió de memòria cau detectada a v0.2.
+
+QA abans de publicar:
+
+- PASS: node --check app.js, node --check data.js i git diff --check; cap lint/typecheck/build local configurat.
+- PASS: comprovació en memòria de 8 identificadors únics, igualtat de les 3 dades originals, traduccions originals de les fitxes intactes, claus CA/ES/EN equivalents i tots els camps requerits resolts. Plantilla del comptador comprovada amb 8 i 9 elements.
+- PASS: navegador Chrome en localhost, CA/ES/EN: 8 fitxes, 32 definicions no buides, comptador 8 traduït, advertiment de DESPACITO i nota de clau de BITÀCORA traduïts i diferenciats; crèdit i enllaç al formulari preservats. Cap error de consola observat.
+- PASS: mòbil amb amplada CSS real observada de 356 px (clientWidth = scrollWidth = 339 px) en tres idiomes, cap fitxa o avís fora de l’amplada. Escriptori a 1653 px, clientWidth = scrollWidth = 1636 px, tres columnes i cap traducció buida. Les peticions de 320 px no van produir aquesta amplada real: no s’afirma haver provat 320 px en aquesta versió.
+- PASS: Tab pels selectors, formulari, 8 Maps i crèdit; Shift+Tab retrocedeix; focus visible; Espai i Retorn canvien idioma; Retorn al salt enfoca main.
+- PASS: els cinc Maps nous oberts al navegador: DESPACITO (Lope de Vega 94), L’Ovella Negra Marina (Zamora 78), Beercelona Bar (Rambla del Poblenou 118), Bitácora PobleNou (Plaça de la Unió 24) i Bar Trébol (Pujades 225). Verifica destinacions, no condicions d’accessibilitat actuals.
+- PASS: botó del formulari activat amb teclat; arriba al mateix formulari públic, amb Enviar disponible. No s’ha enviat una nova resposta ni modificat Forms/Sheets.
+
+NO COMPROVAT: telèfon físic, zoom real al 200%, lector de pantalla i revisió visual completa. Les mesures del DOM no substitueixen aquestes proves. Es mantenen les limitacions de fiabilitat, els desconeguts i la supressió manual de dades de propostes als sis mesos; no s’afirma cap certificació legal ni d’accessibilitat.
+
 ## V0.2 — Publicació autoritzada el 20 d’octubre de 2026
 
 Estat actual: formulari publicat per a qualsevol persona amb l’enllaç. Prova real sense sessió de Google enviada amb dades exclusivament sintètiques i registrada al full privat. La web està publicada amb el botó Proposa un WC / Propón un baño / Suggest a toilet. Les seccions de preparació següents són evidències històriques i no descriuen l’estat actual.

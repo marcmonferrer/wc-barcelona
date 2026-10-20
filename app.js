@@ -15,7 +15,7 @@
     document.documentElement.lang = language;
     document.title = t.title;
     document.querySelector('meta[name="description"]').content = t.description;
-    document.querySelectorAll('[data-text]').forEach(node => { node.textContent = t[node.dataset.text]; });
+    document.querySelectorAll('[data-text]').forEach(node => { node.textContent = node.dataset.text === 'count' ? t.count.replace('{count}', String(places.length)) : t[node.dataset.text]; });
     document.querySelectorAll('[data-label]').forEach(node => { node.setAttribute('aria-label', t[node.dataset.label]); });
     document.querySelectorAll('[data-language]').forEach(button => {
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
@@ -34,9 +34,10 @@
       identity.append(name, address);
       heading.append(identity);
       card.append(heading);
-      if (place.warning) card.append(element('p', t.stepWarning, 'step-warning'));
+      if (place.warning) card.append(element('p', t[place.warning === true ? 'stepWarning' : place.warning], 'step-warning'));
+      if (place.usageNote) card.append(element('p', t[place.usageNote], 'usage-note'));
       const details = element('dl', null, 'details');
-      for (const [label, value] of [['access', place.access], ['interior', place.interior], ['conditions', 'conditionsText'], ['source', 'sourceText']]) {
+      for (const [label, value] of [['access', place.access], ['interior', place.interior], ['conditions', place.conditions || 'conditionsText'], ['source', place.source || 'sourceText']]) {
         const row = element('div', null, 'detail');
         row.append(element('dt', t[label]), element('dd', t[value]));
         details.append(row);
