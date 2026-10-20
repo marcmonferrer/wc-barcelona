@@ -1,6 +1,6 @@
 ## V0.2 — Publicació autoritzada el 20 d’octubre de 2026
 
-Estat actual: formulari publicat per a qualsevol persona amb l’enllaç. Prova real sense sessió de Google enviada amb dades exclusivament sintètiques i registrada al full privat. La web es publica amb el botó Proposa un WC / Propón un baño / Suggest a toilet. Les seccions de preparació següents són evidències històriques i no descriuen l’estat actual.
+Estat actual: formulari publicat per a qualsevol persona amb l’enllaç. Prova real sense sessió de Google enviada amb dades exclusivament sintètiques i registrada al full privat. La web està publicada amb el botó Proposa un WC / Propón un baño / Suggest a toilet. Les seccions de preparació següents són evidències històriques i no descriuen l’estat actual.
 
 Web: https://marcmonferrer.github.io/wc-barcelona/
 Formulari públic: https://docs.google.com/forms/d/e/1FAIpQLSfUGNTH0-uSvMNLMz-HDgap_zpu2E-MTdMvb1rgTUKcA_JWTQ/viewform
@@ -9,7 +9,11 @@ Autorització final expressa de Marc per obrir la recollida i publicar v0.2. No 
 
 Conservació: supressió MANUAL de dades identificatives sis mesos després de resoldre cada proposta, separadament a Forms i Sheets; incloure correus d’aclariment si n’hi ha. No hi ha automatització ni garantia d’esborrat immediat de l’historial/còpies internes de Google. Revisió humana i publicació manual de qualsevol establiment: cap connexió automàtica entre el full i la web.
 
-QA de publicació: formulari anònim, avís en tres idiomes i recepció real al full privat PASS. Verificació de GitHub Pages, commit i regressió pública: s’afegiran després del desplegament. La resposta sintètica de publicació està identificada com a prova i no conté dades personals reals ni establiments reals.
+QA final pública PASS: GitHub Pages desplegat i URL visitada al navegador; commit de producte c733e640d0763aec615d48d5eaa3d73cdf0214ed, amb correcció de recursos ba3e52089f07f439712abdd8e6900e0171126bd0 (desplegament 39401459832 completat correctament). La correcció afegeix ?v=0.2 a data.js i styles.css per evitar barrejar HTML nou amb textos i estils antics de la memòria cau.
+
+PASS: CA/ES/EN, els tres textos del botó i de revisió, Nou Somni/BLAU/Bar Nuri, dotze definicions per idioma, tres Maps i un advertiment d’esglaó traduït. Crèdit Monferrer Lab visible en tres idiomes i enllaç conservat. Destinacions de Maps obertes: NOU SOMNI a Àvila 164, BLAU a Bac de Roda 126–127 i Bar Nuri a Rambla del Poblenou 34. Botó públic activat: arriba al formulari amb avís complet CA/ES/EN abans d’Envia, sense sessió obligatòria. Prova anònima acceptada i registrada al full privat; notificació nativa rebuda a Marc. Resum públic de respostes desactivat. Prova marcada «DESCARTAR», només dades sintètiques i cap proposta real publicada automàticament.
+
+PASS: a 1280 px observats, sense desbordament en tres idiomes i botó de 44 px. Cap error de consola observat a la regressió pública. Sintaxi app.js/data.js i git diff --check correctes; comparació amb la base: dades i textos originals intactes, excepte etiqueta de versió. No hi ha lint/typecheck/build local configurats; el build de Pages ha passat. Modificats index.html, data.js, styles.css i aquest README; cap fitxer nou ni dependència.
 
 NO COMPROVAT: telèfon físic, zoom real al 200%, lector de pantalla, revisió visual completa i adequació jurídica independent de tots els fluxos de Google. No s’ha executat el qüestionari complet de Facilita RGPD. Cap certificació de compliment ni d’accessibilitat.
 
