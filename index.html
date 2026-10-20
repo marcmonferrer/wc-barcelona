@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Observacions personals sobre l’accés i els WC de tres establiments de Barcelona.">
+  <title>WC Barcelona · Experiències d’accés</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-text="skip">Salta al contingut</a>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="WC Barcelona"><span class="brand-mark" aria-hidden="true">WC</span><span>Barcelona<span class="version">v0.1 · LOCAL</span></span></a>
+    <nav data-label="languageLabel" aria-label="Idioma" class="languages">
+      <button type="button" lang="ca" aria-label="Català" data-language="ca" aria-pressed="true">CA</button>
+      <button type="button" lang="es" aria-label="Castellano" data-language="es" aria-pressed="false">ES</button>
+      <button type="button" lang="en" aria-label="English" data-language="en" aria-pressed="false">EN</button>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="intro" aria-labelledby="page-heading">
+      <p class="eyebrow" data-text="eyebrow"></p>
+      <h1 id="page-heading" data-text="heading"></h1>
+      <p class="lead" data-text="intro"></p>
+      <aside class="notice" aria-labelledby="notice-heading"><span aria-hidden="true" class="notice-icon">i</span><div><h2 id="notice-heading" data-text="noticeTitle"></h2><p data-text="notice"></p></div></aside>
+    </section>
+    <section class="directory" aria-labelledby="list-heading">
+      <div class="section-heading"><h2 id="list-heading" data-text="listHeading"></h2><span data-text="count"></span></div>
+      <ul id="places" class="places"></ul>
+    </section>
+    <p class="closing" data-text="closing"></p>
+  </main>
+  <footer><span>WC Barcelona <span aria-hidden="true">/</span> v0.1</span><span data-text="footer"></span><a href="https://monferrerlab.com" data-text="credit">Desenvolupat per Monferrer Lab</a></footer>
+  <p id="language-status" class="sr-only" role="status" aria-live="polite"></p>
+  <noscript><p class="notice">Cal activar JavaScript per veure les tres fitxes i canviar d’idioma. / Activa JavaScript para ver las tres fichas y cambiar de idioma. / Enable JavaScript to view the three listings and change language.</p></noscript>
+</body>
+</html>
