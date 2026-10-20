@@ -28,7 +28,8 @@ Obre `index.html` amb un doble clic o arrossega’l a un navegador. No cal insta
 
 ## Fitxers
 
-- `index.html`: estructura semàntica, selector CA/ES/EN, enllaç per saltar al contingut i favicon buit explícit (`data:,`) per evitar la petició automàtica de `/favicon.ico`.
+- `index.html`: estructura semàntica, selector CA/ES/EN, enllaç per saltar al contingut i referència al favicon SVG.
+- `favicon.svg`: cercle verd fosc amb «WC» en blanc, dibuixat amb traçats vectorials i sense fonts ni recursos externs.
 - `styles.css`: presentació responsive, focus visible i colors.
 - `data.js`: única font de dades i textos traduïts. Els noms i les adreces es conserven en els tres idiomes. `officialNeighborhood: null` reserva el barri oficial sense inventar-lo ni mostrar cap filtre.
 - `app.js`: renderització de les tres fitxes i canvi d’idioma, incloent-hi el títol, la descripció, les etiquetes accessibles i l’avís de canvi d’idioma.
