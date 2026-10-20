@@ -18,7 +18,7 @@ Commit dels quatre fitxers del producte verificats: `1c755f2784ee71a0cd381a89d40
 - Cinc fitxers revisats abans de publicar, sense secrets ni dades personals innecessàries detectats. Cap fitxer privat dels directoris pare inclòs. Metadades dels commits amb el correu professional públic aprovat. X-Ray i Porra no modificats.
 - NO COMPROVAT: zoom real al 200%, lector de pantalla real i revisió visual completa de totes les fitxes. Les proves del DOM i d’amplada no substitueixen aquestes comprovacions.
 
-La denominació «LOCAL / prototip local» de la interfície es conserva del pilot original; el lloc està publicat a l’URL anterior. L’històric següent descriu el treball anterior a la publicació i no l’estat actual.
+La interfície identifica ara el lloc com a «Pilot públic / Piloto público / Public pilot», tant a la marca com al peu de pàgina, amb el sistema de traduccions existent. L’històric següent descriu el treball anterior a la publicació i no l’estat actual.
 
 ## Històric de preparació local
 
