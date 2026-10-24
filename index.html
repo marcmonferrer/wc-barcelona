@@ -6,8 +6,8 @@
   <meta name="description" content="Informació pràctica sobre l’accés i els WC de Barcelona, basada en experiències personals, amb barreres conegudes i dubtes pendents.">
   <title>WC Barcelona · Experiències d’accés</title>
   <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=0.3">
-  <script src="data.js?v=0.3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=0.3-banner1">
+  <script src="data.js?v=0.3-banner1" defer></script>
   <script src="app.js?v=0.3" defer></script>
 </head>
 <body>
@@ -22,9 +22,17 @@
   </header>
   <main id="main" tabindex="-1">
     <section class="intro" aria-labelledby="page-heading">
-      <p class="eyebrow" data-text="eyebrow"></p>
-      <h1 id="page-heading" data-text="heading"></h1>
-      <p class="lead" data-text="intro"></p>
+      <div class="welcome-banner">
+        <picture class="banner-art" aria-hidden="true">
+          <source media="(max-width: 540px)" srcset="assets/wc-barcelona-banner-800.jpg">
+          <img src="assets/wc-barcelona-banner-1600.jpg" width="1600" height="534" alt="" fetchpriority="high" decoding="async">
+        </picture>
+        <div class="banner-copy">
+          <p class="eyebrow" data-text="eyebrow"></p>
+          <h1 id="page-heading">WC Barcelona</h1>
+          <p class="banner-tagline" data-text="bannerIntro">Troba WC accessibles i coneix les barreres abans d’anar-hi.</p>
+        </div>
+      </div>
       <aside class="notice" aria-labelledby="notice-heading"><span aria-hidden="true" class="notice-icon">i</span><div><h2 id="notice-heading" data-text="noticeTitle"></h2><p data-text="notice"></p></div></aside>
     </section>
     <div class="suggestion">

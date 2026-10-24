@@ -13,6 +13,7 @@ window.WC_BARCELONA = {
   ],
   translations: {
     ca: {
+      bannerIntro: 'Troba WC accessibles i coneix les barreres abans d’anar-hi.',
       title: 'WC Barcelona · Experiències d’accés', description: "Informació pràctica sobre l’accés i els WC de Barcelona, basada en experiències personals, amb barreres conegudes i dubtes pendents.",
       skip: 'Salta al contingut', languageLabel: 'Idioma', eyebrow: 'BARCELONA · EXPERIÈNCIES PERSONALS', heading: 'Abans d’anar-hi,\nuna mica més d’informació.', intro: "Informació pràctica basada en experiències reals: com entrar, arribar al WC i acostar-se a l’inodor. Amb les barreres conegudes i els dubtes pendents, perquè cada persona pugui valorar si li serveix.",
       noticeTitle: 'Una experiència, no una garantia', notice: 'L’experiència d’una persona no garanteix l’adequació per a tothom ni l’estat actual de l’establiment. Són observacions personals, no una certificació d’accessibilitat. Les dades desconegudes s’indiquen explícitament.',
@@ -38,6 +39,7 @@ window.WC_BARCELONA = {
       newSource: "Experiència personal comunicada el 20/10/2026. Data exacta de la visita desconeguda."
     },
     es: {
+      bannerIntro: 'Encuentra WC accesibles y conoce las barreras antes de ir.',
       title: 'WC Barcelona · Experiencias de acceso', description: "Información práctica sobre el acceso y los baños de Barcelona, basada en experiencias personales, con barreras conocidas y dudas pendientes.",
       skip: 'Saltar al contenido', languageLabel: 'Idioma', eyebrow: 'BARCELONA · EXPERIENCIAS PERSONALES', heading: 'Antes de ir,\nun poco más de información.', intro: "Información práctica basada en experiencias reales: cómo entrar, llegar al baño y acercarse al inodoro. Con las barreras conocidas y las dudas pendientes, para que cada persona pueda valorar si le sirve.",
       noticeTitle: 'Una experiencia, no una garantía', notice: 'La experiencia de una persona no garantiza la adecuación para todo el mundo ni el estado actual del establecimiento. Son observaciones personales, no una certificación de accesibilidad. Los datos desconocidos se indican explícitamente.',
@@ -63,6 +65,7 @@ window.WC_BARCELONA = {
       newSource: "Experiencia personal comunicada el 20/10/2026. Fecha exacta de la visita desconocida."
     },
     en: {
+      bannerIntro: 'Find accessible toilets and know the barriers before you go.',
       title: 'WC Barcelona · Access experiences', description: "Practical information about access and toilets in Barcelona, based on personal experiences, with known barriers and unanswered questions.",
       skip: 'Skip to content', languageLabel: 'Language', eyebrow: 'BARCELONA · PERSONAL EXPERIENCES', heading: 'A little more information\nbefore you go.', intro: "Practical information based on real experiences: how to enter, reach the toilet and approach the toilet bowl. Known barriers and unanswered questions help each person decide whether a place meets their needs.",
       noticeTitle: 'One experience, not a guarantee', notice: 'One person’s experience does not guarantee suitability for everyone or the establishment’s current condition. These are personal observations, not an accessibility certification. Unknown details are explicitly identified.',
