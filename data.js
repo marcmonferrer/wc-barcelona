@@ -9,10 +9,21 @@ window.WC_BARCELONA = {
     {"id":"ovella-negra-marina","name":"L’OVELLA NEGRA MARINA","address":"Carrer de Zamora, 78, Barcelona","access":"ovellaAccess","interior":"ovellaInterior","officialNeighborhood":null,"maps":"https://www.google.com/maps/search/?api=1&query=L%E2%80%99OVELLA%20NEGRA%20MARINA%20Carrer%20de%20Zamora%2C%2078%2C%20Barcelona","conditions":"unknownConditions","source":"newSource"},
     {"id":"beercelona-bar","name":"BEERCELONA BAR","address":"Rambla del Poblenou, 118, Barcelona","access":"beercelonaAccess","interior":"beercelonaInterior","officialNeighborhood":null,"maps":"https://www.google.com/maps/search/?api=1&query=BEERCELONA%20BAR%20Rambla%20del%20Poblenou%2C%20118%2C%20Barcelona","conditions":"unknownConditions","source":"newSource"},
     {"id":"bitacora-poblenou","name":"BITÀCORA POBLENOU","address":"Plaça de la Unió, 24, Barcelona","access":"bitacoraAccess","interior":"bitacoraInterior","conditions":"keyConditions","usageNote":"keyRequired","officialNeighborhood":null,"maps":"https://www.google.com/maps/search/?api=1&query=BIT%C3%80CORA%20POBLENOU%20Pla%C3%A7a%20de%20la%20Uni%C3%B3%2C%2024%2C%20Barcelona","source":"newSource"},
-    {"id":"bar-trebol","name":"BAR TRÈBOL","address":"Carrer de Pujades, 225, Sant Martí, 08005 Barcelona","access":"trebolAccess","interior":"trebolInterior","officialNeighborhood":null,"maps":"https://www.google.com/maps/search/?api=1&query=BAR%20TR%C3%88BOL%20Carrer%20de%20Pujades%2C%20225%2C%20Sant%20Mart%C3%AD%2C%2008005%20Barcelona","conditions":"unknownConditions","source":"newSource"}
+    {"id":"bar-trebol","name":"BAR TRÈBOL","address":"Carrer de Pujades, 225, Sant Martí, 08005 Barcelona","access":"trebolAccess","interior":"trebolInterior","officialNeighborhood":null,"maps":"https://www.google.com/maps/search/?api=1&query=BAR%20TR%C3%88BOL%20Carrer%20de%20Pujades%2C%20225%2C%20Sant%20Mart%C3%AD%2C%2008005%20Barcelona","conditions":"unknownConditions","source":"newSource"},
+    { id: 'sala-beckett', name: 'Sala Beckett', address: 'carrer de Pere IV 228–232, Barcelona', officialNeighborhood: null, maps: 'https://www.google.com/maps/search/?api=1&query=Sala%20Beckett%20Pere%20IV%20228%E2%80%93232%20Barcelona', access: 'positiveAccess', interior: 'positiveInterior', conditions: 'unknownConditions', source: 'newSource' },
+    { id: 'la-higuera', name: 'La Higuera', address: 'carrer de Sicília 101, Eixample, Barcelona', officialNeighborhood: null, maps: 'https://www.google.com/maps/search/?api=1&query=La%20Higuera%20Sic%C3%ADlia%20101%20Barcelona', access: 'positiveAccess', interior: 'positiveInterior', conditions: 'unknownConditions', source: 'newSource' },
+    { id: 'restaurant-muc', name: 'Restaurant MUC · Hotel SB Glow', address: 'carrer de Badajoz 148–154, Sant Martí, Barcelona', officialNeighborhood: null, maps: 'https://www.google.com/maps/search/?api=1&query=Restaurant%20MUC%20Hotel%20SB%20Glow%20Badajoz%20148%E2%80%93154%20Barcelona', access: 'positiveAccess', interior: 'positiveInterior', conditions: 'mucConditions', source: 'october25Source' },
+    { id: 'bar-andrea', name: 'Bar Andrea', address: 'carrer de la Ciutat de Granada 163, Barcelona', officialNeighborhood: null, maps: 'https://www.google.com/maps/search/?api=1&query=Bar%20Andrea%20Ciutat%20de%20Granada%20163%20Barcelona', access: 'andreaAccess', interior: 'andreaInterior', warning: 'andreaWarning', conditions: 'unknownConditions', source: 'october25Source' }
   ],
   translations: {
     ca: {
+      positiveAccess: 'Segons l’experiència personal: accés al local i recorregut fins a l’inodor sense dificultats durant la visita.',
+      positiveInterior: 'Experiència positiva fins a l’inodor amb la cadira utilitzada. Barres de suport i dimensions desconegudes; les transferències no s’han documentat.',
+      mucConditions: 'Condicions d’ús desconegudes: no s’ha confirmat si cal consumir, demanar una clau o obtenir permís. L’accés de persones no allotjades a l’hotel o no clientes del restaurant no està confirmat.',
+      andreaWarning: 'Maniobra considerable per entrar al WC · potencialment molt justa amb cadira elèctrica',
+      andreaAccess: 'Accés al local i interior valorats positivament segons l’experiència personal. Entrar al WC requereix una maniobra considerable, potencialment molt justa amb una cadira elèctrica. No hi ha mesures verificades ni compatibilitat universal confirmada.',
+      andreaInterior: 'Aproximació a l’inodor possible segons l’experiència amb la cadira utilitzada. Això no garanteix totes les transferències. Barres de suport i dimensions desconegudes.',
+      october25Source: 'Experiència personal comunicada el 25/10/2026. Data exacta de la visita desconeguda.',
       bannerIntro: 'Troba WC accessibles i coneix les barreres abans d’anar-hi.',
       title: 'WC Barcelona · Experiències d’accés', description: "Informació pràctica sobre l’accés i els WC de Barcelona, basada en experiències personals, amb barreres conegudes i dubtes pendents.",
       skip: 'Salta al contingut', languageLabel: 'Idioma', eyebrow: 'BARCELONA · EXPERIÈNCIES PERSONALS', heading: 'Abans d’anar-hi,\nuna mica més d’informació.', intro: "Informació pràctica basada en experiències reals: com entrar, arribar al WC i acostar-se a l’inodor. Amb les barreres conegudes i els dubtes pendents, perquè cada persona pugui valorar si li serveix.",
@@ -39,6 +50,13 @@ window.WC_BARCELONA = {
       newSource: "Experiència personal comunicada el 20/10/2026. Data exacta de la visita desconeguda."
     },
     es: {
+      positiveAccess: 'Según la experiencia personal: acceso al local y recorrido hasta el inodoro sin dificultades durante la visita.',
+      positiveInterior: 'Experiencia positiva hasta el inodoro con la silla utilizada. Barras de apoyo y dimensiones desconocidas; las transferencias no se han documentado.',
+      mucConditions: 'Condiciones de uso desconocidas: no se ha confirmado si es necesario consumir, pedir una llave u obtener permiso. El acceso de personas no alojadas en el hotel o que no sean clientes del restaurante no está confirmado.',
+      andreaWarning: 'Maniobra considerable para entrar al baño · potencialmente muy justa con silla eléctrica',
+      andreaAccess: 'Acceso al local e interior valorados positivamente según la experiencia personal. Entrar al baño requiere una maniobra considerable, potencialmente muy justa con una silla eléctrica. No hay medidas verificadas ni compatibilidad universal confirmada.',
+      andreaInterior: 'Aproximación al inodoro posible según la experiencia con la silla utilizada. Esto no garantiza todas las transferencias. Barras de apoyo y dimensiones desconocidas.',
+      october25Source: 'Experiencia personal comunicada el 25/10/2026. Fecha exacta de la visita desconocida.',
       bannerIntro: 'Encuentra WC accesibles y conoce las barreras antes de ir.',
       title: 'WC Barcelona · Experiencias de acceso', description: "Información práctica sobre el acceso y los baños de Barcelona, basada en experiencias personales, con barreras conocidas y dudas pendientes.",
       skip: 'Saltar al contenido', languageLabel: 'Idioma', eyebrow: 'BARCELONA · EXPERIENCIAS PERSONALES', heading: 'Antes de ir,\nun poco más de información.', intro: "Información práctica basada en experiencias reales: cómo entrar, llegar al baño y acercarse al inodoro. Con las barreras conocidas y las dudas pendientes, para que cada persona pueda valorar si le sirve.",
@@ -65,6 +83,13 @@ window.WC_BARCELONA = {
       newSource: "Experiencia personal comunicada el 20/10/2026. Fecha exacta de la visita desconocida."
     },
     en: {
+      positiveAccess: 'According to the personal experience: no difficulty entering the venue or reaching the toilet bowl during the visit.',
+      positiveInterior: 'A positive experience reaching the toilet bowl with the wheelchair used. Grab bars and dimensions are unknown; transfers have not been documented.',
+      mucConditions: 'Conditions of use are unknown: a purchase, key or permission requirement has not been confirmed. Access for people who are not hotel guests or restaurant customers has not been confirmed.',
+      andreaWarning: 'Considerable manoeuvring to enter the toilet room · potentially very tight with a powered wheelchair',
+      andreaAccess: 'Entry to the venue and the interior were rated positively in the personal experience. Entering the toilet room requires considerable manoeuvring and may be very tight with a powered wheelchair. No measurements have been verified and universal compatibility is unconfirmed.',
+      andreaInterior: 'Approaching the toilet bowl was possible in the experience with the wheelchair used. This does not guarantee every transfer. Grab bars and dimensions are unknown.',
+      october25Source: 'Personal experience shared on 25 October 2026. The exact visit date is unknown.',
       bannerIntro: 'Find accessible toilets and know the barriers before you go.',
       title: 'WC Barcelona · Access experiences', description: "Practical information about access and toilets in Barcelona, based on personal experiences, with known barriers and unanswered questions.",
       skip: 'Skip to content', languageLabel: 'Language', eyebrow: 'BARCELONA · PERSONAL EXPERIENCES', heading: 'A little more information\nbefore you go.', intro: "Practical information based on real experiences: how to enter, reach the toilet and approach the toilet bowl. Known barriers and unanswered questions help each person decide whether a place meets their needs.",
