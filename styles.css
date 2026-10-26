@@ -38,7 +38,7 @@ h1 { font-size: clamp(2rem, 4.8vw, 3.65rem); font-weight: 600; line-height: 1.12
 .notice h2 { font-size: .96rem; margin: 0 0 5px; }
 .notice p { color: var(--muted); font-size: .93rem; margin: 0; max-width: 900px; }
 .suggestion { margin-bottom: 28px; }
-.suggestion-link { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px; border: 1px solid var(--green); border-radius: 8px; font-size: .9rem; font-weight: 700; }
+.suggestion-link { display: flex; width: 100%; justify-content: center; align-items: center; min-height: 60px; padding: 14px 20px; border: 1px solid var(--green); border-radius: 8px; background: var(--green); color: var(--white); font-size: 1rem; font-weight: 700; text-align: center; }
 .suggestion p { margin: 8px 0 0; color: var(--muted); font-size: .88rem; }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 20px; }
 .section-heading h2 { font-size: 1.5rem; letter-spacing: -.03em; margin: 0; font-weight: 650; }
@@ -46,10 +46,12 @@ h1 { font-size: clamp(2rem, 4.8vw, 3.65rem); font-weight: 600; line-height: 1.12
 .places { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; list-style: none; padding: 0; margin: 0; }
 .places > li { display: flex; min-width: 0; }
 .place { width: 100%; background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 26px; display: flex; flex-direction: column; }
-.place-heading { display: flex; align-items: baseline; gap: 14px; }
-.place-number { font-size: .75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.place-heading h3 { text-align: center; }
+.place-subtitle { display: block; margin-top: .25em; font-size: .8em; font-weight: 550; }
 h3 { font-size: 1.55rem; font-weight: 650; line-height: 1.2; letter-spacing: -.025em; margin: 0 0 9px; }
 .address { margin: 0; color: var(--muted); font-size: .88rem; }
+.address > span { display: block; }
+.address-area { margin-top: .3em; }
 .step-warning { background: #fff0d9; color: #78400a; border-left: 3px solid #a95107; border-radius: 3px; padding: 10px 12px; font-weight: 750; font-size: .87rem; margin: 22px 0 0; }
 .usage-note { color: var(--green); border: 1px solid var(--line); border-radius: 3px; padding: 10px 12px; font-weight: 750; font-size: .87rem; margin: 22px 0 0; }
 .details { margin: 24px 0; }

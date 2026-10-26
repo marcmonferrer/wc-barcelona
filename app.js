@@ -20,17 +20,23 @@
     document.querySelectorAll('[data-language]').forEach(button => {
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
     });
-    list.replaceChildren(...places.map((place, index) => {
+    list.replaceChildren(...places.map(place => {
       const item = element('li');
       const card = element('article', null, 'place');
       card.setAttribute('aria-labelledby', place.id);
       const heading = element('div', null, 'place-heading');
-      heading.append(element('span', String(index + 1).padStart(2, '0'), 'place-number'));
       const identity = element('div');
       const name = element('h3', place.name);
       name.id = place.id;
-      const address = element('p', place.address, 'address');
+      if (place.id === 'restaurant-muc') {
+        const [restaurant, hotel] = place.name.split(' · ');
+        name.replaceChildren(element('span', restaurant), element('span', ' · ', 'sr-only'), element('span', hotel, 'place-subtitle'));
+      }
+      const areaStart = place.officialNeighborhood ? place.address.lastIndexOf(`, ${place.officialNeighborhood}`) : -1;
+      const address = element('p', null, 'address');
       address.lang = 'ca';
+      address.append(element('span', areaStart < 0 ? place.address : place.address.slice(0, areaStart), 'address-street'));
+      if (areaStart >= 0) address.append(document.createTextNode(' '), element('span', place.address.slice(areaStart + 2), 'address-area'));
       identity.append(name, address);
       heading.append(identity);
       card.append(heading);
