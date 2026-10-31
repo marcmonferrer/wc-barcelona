@@ -70,10 +70,14 @@
     }
   }
   function stop() {
+    const wasActive=active;
     window[disable]=true;active=false;
     document.getElementById('consented-analytics-tag')?.remove();
     // Do not send a denied-consent ping: the opt-out flag blocks the loaded library.
     eraseCookies();
+    // Removing the tag does not cancel GA4's existing timers. Destroy the page
+    // runtime after persisting rejection so queued measurements cannot resume.
+    if(wasActive && started && !simulated) location.reload();
   }
   const banner=document.createElement('section');banner.className='analytics-banner';banner.setAttribute('aria-labelledby','analytics-banner-title');
   banner.innerHTML='<h2 id="analytics-banner-title" data-ac="title"></h2><p data-ac="text"></p><p class="analytics-preview" data-ac="preview"></p><div class="analytics-actions"><button type="button" data-choice="accepted" data-ac="accept"></button><button type="button" data-choice="rejected" data-ac="reject"></button><button type="button" data-open data-ac="details"></button></div>';
