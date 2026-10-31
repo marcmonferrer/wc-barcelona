@@ -142,3 +142,426 @@ window.WC_BARCELONA = {
     }
   }
 };
+
+// Compact presentation is separate from the complete original information above.
+window.WC_BARCELONA.compact = {
+  "preparedOn": "2026-10-31",
+  "note": "Visible summaries and normalized addresses. The original places and translations above retain complete observations, conditions, visit dates, contribution dates and source text unchanged. Summary warnings use the original warning keys.",
+  "summaries": {
+    "nou-somni": {
+      "access": "cEasyPartial",
+      "bars": "cUnknown",
+      "interior": "cAdapted",
+      "usageNote": "cConsumed"
+    },
+    "blau": {
+      "access": "cEasyPartial",
+      "bars": "cUnknown",
+      "interior": "cAdapted",
+      "usageNote": "cConsumed"
+    },
+    "bar-nuri": {
+      "access": "cStep",
+      "bars": "cYes",
+      "interior": "cNuri",
+      "usageNote": "cConsumed"
+    },
+    "despacito": {
+      "access": "cDespacitoAccess",
+      "bars": "cAtLeastOne",
+      "interior": "cDespacitoInterior"
+    },
+    "ovella-negra-marina": {
+      "access": "cWcAccess",
+      "bars": "cUnknown",
+      "interior": "cApproachUnknown"
+    },
+    "beercelona-bar": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cEasyApproach"
+    },
+    "bitacora-poblenou": {
+      "access": "cRouteToWc",
+      "bars": "cUnknown",
+      "interior": "cApproachUnknown"
+    },
+    "bar-trebol": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cSpacious"
+    },
+    "sala-beckett": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "la-higuera": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "restaurant-muc": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach",
+      "usageNote": "cHotelUse"
+    },
+    "bar-andrea": {
+      "access": "cAndreaAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "minyam-poblenou": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "balius-poblenou": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "la-yaya-del-poblenou": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "chocolat-box": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "4uatre-lounge": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "ramen-house": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "soco-poblenou": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "bar-bilbao": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    },
+    "bar-cafeteria-panes": {
+      "access": "cClearAccess",
+      "bars": "cUnknown",
+      "interior": "cPossibleApproach"
+    }
+  },
+  "addresses": {
+    "nou-somni": {
+      "street": "Carrer d’Àvila, 164",
+      "neighborhood": "el Parc i la Llacuna del Poblenou",
+      "postalCode": "08018",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A29206%2C%22numpost%22%3A%5B164%5D%7D"
+      ],
+      "pending": []
+    },
+    "blau": {
+      "street": "Carrer de Bac de Roda, 126–127",
+      "neighborhood": "Provençals del Poblenou",
+      "postalCode": null,
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A30409%2C%22numpost%22%3A%5B126%2C127%5D%7D"
+      ],
+      "pending": [
+        "Confirmar el portal real de Blau: el 126 té 08020 i el 127 té 08018. Es conserva 126–127; cap codi postal únic publicat."
+      ]
+    },
+    "bar-nuri": {
+      "street": "Rambla del Poblenou, 34",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A346800%2C%22numpost%22%3A%5B34%5D%7D"
+      ],
+      "pending": []
+    },
+    "despacito": {
+      "street": "Carrer de Lope de Vega, 94",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A180401%2C%22numpost%22%3A%5B94%5D%7D"
+      ],
+      "pending": []
+    },
+    "ovella-negra-marina": {
+      "street": "Carrer de Zamora, 78",
+      "neighborhood": "el Parc i la Llacuna del Poblenou",
+      "postalCode": "08018",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A369204%2C%22numpost%22%3A%5B78%5D%7D"
+      ],
+      "pending": []
+    },
+    "beercelona-bar": {
+      "street": "Rambla del Poblenou, 118",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A346800%2C%22numpost%22%3A%5B118%5D%7D"
+      ],
+      "pending": []
+    },
+    "bitacora-poblenou": {
+      "street": "Plaça de la Unió, 24",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A349003%2C%22numpost%22%3A%5B24%5D%7D"
+      ],
+      "pending": []
+    },
+    "bar-trebol": {
+      "street": "Carrer de Pujades, 225",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A270901%2C%22numpost%22%3A%5B225%5D%7D"
+      ],
+      "pending": []
+    },
+    "sala-beckett": {
+      "street": "Carrer de Pere IV, 228–232",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A249304%2C%22numpost%22%3A%5B228%2C230%2C232%5D%7D"
+      ],
+      "pending": []
+    },
+    "la-higuera": {
+      "street": "Carrer de Sicília, 101",
+      "neighborhood": "el Fort Pienc",
+      "postalCode": "08013",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A325005%2C%22numpost%22%3A%5B101%5D%7D"
+      ],
+      "pending": []
+    },
+    "restaurant-muc": {
+      "street": "Carrer de Badajoz, 148–154",
+      "neighborhood": "el Parc i la Llacuna del Poblenou",
+      "postalCode": "08018",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A30500%2C%22numpost%22%3A%5B148%2C150%2C152%2C154%5D%7D"
+      ],
+      "pending": []
+    },
+    "bar-andrea": {
+      "street": "Carrer de la Ciutat de Granada, 163",
+      "neighborhood": "el Parc i la Llacuna del Poblenou",
+      "postalCode": "08018",
+      "verifiedOn": "2026-10-26",
+      "sources": [
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A148704%2C%22numpost%22%3A%5B163%5D%7D"
+      ],
+      "pending": []
+    },
+    "minyam-poblenou": {
+      "street": "Carrer de Pujades, 187",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=Minyam%20Poblenou%20Carrer%20de%20Pujades%2C%20187%20Barcelona",
+        "https://www.paginasamarillas.es/f/barcelona/minyam_224699868_000000001.html"
+      ],
+      "pending": []
+    },
+    "balius-poblenou": {
+      "street": "Carrer de Pujades, 196",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=Balius%20Poblenou%20Carrer%20de%20Pujades%2C%20196%20Barcelona",
+        "https://www.timeout.es/barcelona/es/bares-y-pubs/balius"
+      ],
+      "pending": []
+    },
+    "la-yaya-del-poblenou": {
+      "street": "Rambla del Poblenou, 142",
+      "neighborhood": null,
+      "postalCode": "08018",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=La%20Yaya%20del%20Poblenou%20Rambla%20del%20Poblenou%2C%20142%20Barcelona"
+      ],
+      "pending": [
+        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
+      ]
+    },
+    "chocolat-box": {
+      "street": "Rambla del Poblenou, 80",
+      "neighborhood": null,
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=Chocolat%20Box%20Rambla%20del%20Poblenou%2C%2080%20Barcelona"
+      ],
+      "pending": [
+        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
+      ]
+    },
+    "4uatre-lounge": {
+      "street": "Rambla del Poblenou, 63",
+      "neighborhood": null,
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=4uatre%20Lounge%20Rambla%20del%20Poblenou%2C%2063%20Barcelona"
+      ],
+      "pending": [
+        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
+      ]
+    },
+    "ramen-house": {
+      "street": "Rambla del Poblenou, 65",
+      "neighborhood": null,
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=Ramen%20House%20Rambla%20del%20Poblenou%2C%2065%20Barcelona"
+      ],
+      "pending": [
+        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
+      ]
+    },
+    "soco-poblenou": {
+      "street": "Carrer de Bilbao, 31",
+      "neighborhood": "el Poblenou",
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=Soco%20Poblenou%20Carrer%20de%20Bilbao%2C%2031%20Barcelona",
+        "https://guia.barcelona.cat/en/detall/restaurant-soco-poblenou_99400604338.html"
+      ],
+      "pending": []
+    },
+    "bar-bilbao": {
+      "street": "Carrer de Bilbao, 18",
+      "neighborhood": null,
+      "postalCode": "08005",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=Bar%20Bilbao%20Carrer%20de%20Bilbao%2C%2018%20Barcelona"
+      ],
+      "pending": [
+        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
+      ]
+    },
+    "bar-cafeteria-panes": {
+      "street": "Gran Via de les Corts Catalanes, 1037",
+      "neighborhood": null,
+      "postalCode": "08020",
+      "verifiedOn": "2026-10-31",
+      "sources": [
+        "https://www.google.com/maps/search/?api=1&query=Bar%20%C2%B7%20Cafeteria%20Panes%20Gran%20Via%20de%20les%20Corts%20Catalanes%2C%201037%20Barcelona"
+      ],
+      "pending": [
+        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
+      ]
+    }
+  },
+  "translations": {
+    "ca": {
+      "compactAccess": "Accés carrer → inodor",
+      "bars": "Barres",
+      "notice": "Experiències personals amb una cadira concreta, no una certificació ni una garantia per a tothom. Les condicions d’ús no indicades (clau, consumició o permís) són desconegudes.",
+      "cUnknown": "Desconegudes.",
+      "cYes": "Sí.",
+      "cAtLeastOne": "Sí, almenys una.",
+      "cNo": "No.",
+      "cEasyPartial": "Recorregut fàcil, sense graons; aproximació no detallada.",
+      "cAdapted": "Molt ben adaptat segons la visita; detalls no documentats.",
+      "cStep": "Cal ajuda a l’esglaó; recorregut interior no detallat.",
+      "cNuri": "Reformat, molt espaiós i net.",
+      "cDespacitoAccess": "Rampa fàcil; porta del WC amb dificultats.",
+      "cDespacitoInterior": "Espaiós; aproximació fàcil un cop dins.",
+      "cWcAccess": "Accés al local i al WC sense dificultats observades.",
+      "cApproachUnknown": "Aproximació a l’inodor no documentada.",
+      "cClearAccess": "Sense dificultats observades.",
+      "cEasyApproach": "Aproximació a l’inodor fàcil.",
+      "cRouteToWc": "Entrada i recorregut fins al WC fàcils.",
+      "cSpacious": "Gran i espaiós; aproximació fàcil.",
+      "cPossibleApproach": "Aproximació a l’inodor possible.",
+      "cAndreaAccess": "Entrada al WC amb maniobra considerable.",
+      "cConsumed": "Es va consumir durant la visita; obligatorietat desconeguda.",
+      "cHotelUse": "Accés de persones no allotjades o no clientes sense confirmar."
+    },
+    "es": {
+      "compactAccess": "Acceso calle → inodoro",
+      "bars": "Barras",
+      "notice": "Experiencias personales con una silla concreta, no una certificación ni una garantía para todo el mundo. Las condiciones de uso no indicadas (llave, consumición o permiso) son desconocidas.",
+      "cUnknown": "Desconocidas.",
+      "cYes": "Sí.",
+      "cAtLeastOne": "Sí, al menos una.",
+      "cNo": "No.",
+      "cEasyPartial": "Recorrido fácil, sin escalones; aproximación no detallada.",
+      "cAdapted": "Muy bien adaptado según la visita; detalles no documentados.",
+      "cStep": "Se necesita ayuda en el escalón; recorrido interior no detallado.",
+      "cNuri": "Reformado, muy espacioso y limpio.",
+      "cDespacitoAccess": "Rampa fácil; puerta del baño con dificultades.",
+      "cDespacitoInterior": "Espacioso; aproximación fácil una vez dentro.",
+      "cWcAccess": "Acceso al local y al baño sin dificultades observadas.",
+      "cApproachUnknown": "Aproximación al inodoro no documentada.",
+      "cClearAccess": "Sin dificultades observadas.",
+      "cEasyApproach": "Aproximación al inodoro fácil.",
+      "cRouteToWc": "Entrada y recorrido hasta el baño fáciles.",
+      "cSpacious": "Grande y espacioso; aproximación fácil.",
+      "cPossibleApproach": "Aproximación al inodoro posible.",
+      "cAndreaAccess": "Entrada al baño con maniobra considerable.",
+      "cConsumed": "Se consumió durante la visita; obligatoriedad desconocida.",
+      "cHotelUse": "Acceso de personas no alojadas o no clientes sin confirmar."
+    },
+    "en": {
+      "compactAccess": "Street → toilet bowl access",
+      "bars": "Grab bars",
+      "notice": "Personal experiences with a particular wheelchair, not a certification or a guarantee for everyone. Unstated conditions of use (key, purchase or permission) are unknown.",
+      "cUnknown": "Unknown.",
+      "cYes": "Yes.",
+      "cAtLeastOne": "Yes, at least one.",
+      "cNo": "No.",
+      "cEasyPartial": "Easy route, no steps; approach not detailed.",
+      "cAdapted": "Very well adapted according to the visit; details not documented.",
+      "cStep": "Help needed at the step; interior route not detailed.",
+      "cNuri": "Renovated, very spacious and clean.",
+      "cDespacitoAccess": "Easy ramp; difficulty at the toilet doorway.",
+      "cDespacitoInterior": "Spacious; easy approach once inside.",
+      "cWcAccess": "No observed difficulty entering the venue or accessing the toilet room.",
+      "cApproachUnknown": "Approach to the toilet bowl not documented.",
+      "cClearAccess": "No difficulties observed.",
+      "cEasyApproach": "Easy approach to the toilet bowl.",
+      "cRouteToWc": "Easy entry and route to the toilet room.",
+      "cSpacious": "Large and spacious; easy approach.",
+      "cPossibleApproach": "Approaching the toilet bowl was possible.",
+      "cAndreaAccess": "Considerable manoeuvring to enter the toilet room.",
+      "cConsumed": "A purchase was made during the visit; requirement unknown.",
+      "cHotelUse": "Access for non-guests or non-customers is unconfirmed."
+    }
+  }
+};

@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const { places, translations } = window.WC_BARCELONA;
+  const { places, translations, compact } = window.WC_BARCELONA;
   const list = document.getElementById('places');
 
   function element(tag, text, className) {
@@ -11,7 +11,7 @@
   }
 
   function render(language, announce = false) {
-    const t = translations[language];
+    const t = { ...translations[language], ...compact.translations[language] };
     document.documentElement.lang = language;
     document.title = t.title;
     document.querySelector('meta[name="description"]').content = t.description;
@@ -21,6 +21,8 @@
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
     });
     list.replaceChildren(...places.map(place => {
+      const summary = compact.summaries[place.id];
+      const location = compact.addresses[place.id];
       const item = element('li');
       const card = element('article', null, 'place');
       card.setAttribute('aria-labelledby', place.id);
@@ -32,18 +34,19 @@
         const [restaurant, hotel] = place.name.split(' · ');
         name.replaceChildren(element('span', restaurant), element('span', ' · ', 'sr-only'), element('span', hotel, 'place-subtitle'));
       }
-      const areaStart = place.officialNeighborhood ? place.address.lastIndexOf(`, ${place.officialNeighborhood}`) : -1;
       const address = element('p', null, 'address');
       address.lang = 'ca';
-      address.append(element('span', areaStart < 0 ? place.address : place.address.slice(0, areaStart), 'address-street'));
-      if (areaStart >= 0) address.append(document.createTextNode(' '), element('span', place.address.slice(areaStart + 2), 'address-area'));
+      address.append(element('span', location.street, 'address-street'));
+      const area = [location.neighborhood, location.postalCode].filter(Boolean).join(' · ');
+      if (area) address.append(document.createTextNode(' '), element('span', area, 'address-area'));
       identity.append(name, address);
       heading.append(identity);
       card.append(heading);
       if (place.warning) card.append(element('p', t[place.warning === true ? 'stepWarning' : place.warning], 'step-warning'));
-      if (place.usageNote) card.append(element('p', t[place.usageNote], 'usage-note'));
+      const usageNote = place.usageNote || summary.usageNote;
+      if (usageNote) card.append(element('p', t[usageNote], 'usage-note'));
       const details = element('dl', null, 'details');
-      for (const [label, value] of [['access', place.access], ['interior', place.interior], ['conditions', place.conditions || 'conditionsText'], ['source', place.source || 'sourceText']]) {
+      for (const [label, value] of [['compactAccess', summary.access], ['bars', summary.bars], ['interior', summary.interior]]) {
         const row = element('div', null, 'detail');
         row.append(element('dt', t[label]), element('dd', t[value]));
         details.append(row);
