@@ -272,14 +272,22 @@ window.WC_BARCELONA.compact = {
     "blau": {
       "street": "Carrer de Bac de Roda, 126–127",
       "neighborhood": "Provençals del Poblenou",
-      "postalCode": null,
-      "verifiedOn": "2026-10-26",
+      "postalCode": "08020",
+      "verifiedOn": "2026-10-31",
       "sources": [
-        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A30409%2C%22numpost%22%3A%5B126%2C127%5D%7D"
+        "https://opendata-ajuntament.barcelona.cat/data/api/3/action/datastore_search?resource_id=50c9b17f-d297-4668-bad4-e1c217580747&filters=%7B%22codi_carrer%22%3A30409%2C%22numpost%22%3A%5B126%2C127%5D%7D",
+        "https://www.paginasamarillas.es/f/barcelona/blau_235338480_000000001.html",
+        "https://maps.app.goo.gl/fawPUnv1DJmWFVbv6"
       ],
       "pending": [
-        "Confirmar el portal real de Blau: el 126 té 08020 i el 127 té 08018. Es conserva 126–127; cap codi postal únic publicat."
-      ]
+        "Portal literal retained as supplied (126–127). Google Maps lists 126, 127 and 08020; Páginas Amarillas identifies this business at 126, 08020. The municipal postcode for portal 127 is 08018. The displayed 08020 is verified for the business, not asserted for both portals. Exact single entrance number remains unconfirmed."
+      ],
+      "postalVerification": {
+        "checkedOn": "2026-10-31",
+        "scope": "Business postal address",
+        "googleMaps": "Carrer de Bac de Roda, 126, 127, Sant Martí, 08020 Barcelona, España",
+        "paginasAmarillas": "Carrer Bac de Roda, 126, 08020, Barcelona"
+      }
     },
     "bar-nuri": {
       "street": "Rambla del Poblenou, 34",
@@ -405,51 +413,87 @@ window.WC_BARCELONA.compact = {
     },
     "la-yaya-del-poblenou": {
       "street": "Rambla del Poblenou, 142",
-      "neighborhood": null,
+      "neighborhood": "el Poblenou",
       "postalCode": "08018",
       "verifiedOn": "2026-10-31",
       "sources": [
-        "https://www.google.com/maps/search/?api=1&query=La%20Yaya%20del%20Poblenou%20Rambla%20del%20Poblenou%2C%20142%20Barcelona"
+        "https://www.google.com/maps/search/?api=1&query=La%20Yaya%20del%20Poblenou%20Rambla%20del%20Poblenou%2C%20142%20Barcelona",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=119.BARCELONA.42",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41"
       ],
-      "pending": [
-        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
-      ]
+      "pending": [],
+      "geographyVerification": {
+        "publisher": "Ajuntament de Barcelona / CartoBCN",
+        "checkedOn": "2026-10-31",
+        "method": "Exact municipal street name + numeric postal number + blank suffix. BARRI joined to official administrative polygons. No neighborhood inferred from commercial name or postcode.",
+        "municipalRecordId": 95211,
+        "streetCode": "346800",
+        "number": 142,
+        "neighborhoodCode": "68"
+      }
     },
     "chocolat-box": {
       "street": "Rambla del Poblenou, 80",
-      "neighborhood": null,
+      "neighborhood": "el Poblenou",
       "postalCode": "08005",
       "verifiedOn": "2026-10-31",
       "sources": [
-        "https://www.google.com/maps/search/?api=1&query=Chocolat%20Box%20Rambla%20del%20Poblenou%2C%2080%20Barcelona"
+        "https://www.google.com/maps/search/?api=1&query=Chocolat%20Box%20Rambla%20del%20Poblenou%2C%2080%20Barcelona",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=119.BARCELONA.42",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41"
       ],
-      "pending": [
-        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
-      ]
+      "pending": [],
+      "geographyVerification": {
+        "publisher": "Ajuntament de Barcelona / CartoBCN",
+        "checkedOn": "2026-10-31",
+        "method": "Exact municipal street name + numeric postal number + blank suffix. BARRI joined to official administrative polygons. No neighborhood inferred from commercial name or postcode.",
+        "municipalRecordId": 143774,
+        "streetCode": "346800",
+        "number": 80,
+        "neighborhoodCode": "68"
+      }
     },
     "4uatre-lounge": {
       "street": "Rambla del Poblenou, 63",
-      "neighborhood": null,
+      "neighborhood": "el Poblenou",
       "postalCode": "08005",
       "verifiedOn": "2026-10-31",
       "sources": [
-        "https://www.google.com/maps/search/?api=1&query=4uatre%20Lounge%20Rambla%20del%20Poblenou%2C%2063%20Barcelona"
+        "https://www.google.com/maps/search/?api=1&query=4uatre%20Lounge%20Rambla%20del%20Poblenou%2C%2063%20Barcelona",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=119.BARCELONA.42",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41"
       ],
-      "pending": [
-        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
-      ]
+      "pending": [],
+      "geographyVerification": {
+        "publisher": "Ajuntament de Barcelona / CartoBCN",
+        "checkedOn": "2026-10-31",
+        "method": "Exact municipal street name + numeric postal number + blank suffix. BARRI joined to official administrative polygons. No neighborhood inferred from commercial name or postcode.",
+        "municipalRecordId": 126719,
+        "streetCode": "346800",
+        "number": 63,
+        "neighborhoodCode": "68"
+      }
     },
     "ramen-house": {
       "street": "Rambla del Poblenou, 65",
-      "neighborhood": null,
+      "neighborhood": "el Poblenou",
       "postalCode": "08005",
       "verifiedOn": "2026-10-31",
       "sources": [
-        "https://www.google.com/maps/search/?api=1&query=Ramen%20House%20Rambla%20del%20Poblenou%2C%2065%20Barcelona"
+        "https://www.google.com/maps/search/?api=1&query=Ramen%20House%20Rambla%20del%20Poblenou%2C%2065%20Barcelona",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=119.BARCELONA.42",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41"
       ],
-      "pending": [
-        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
-      ]
+      "pending": [],
+      "geographyVerification": {
+        "publisher": "Ajuntament de Barcelona / CartoBCN",
+        "checkedOn": "2026-10-31",
+        "method": "Exact municipal street name + numeric postal number + blank suffix. BARRI joined to official administrative polygons. No neighborhood inferred from commercial name or postcode.",
+        "municipalRecordId": 131677,
+        "streetCode": "346800",
+        "number": 65,
+        "neighborhoodCode": "68"
+      }
     },
     "soco-poblenou": {
       "street": "Carrer de Bilbao, 31",
@@ -464,27 +508,45 @@ window.WC_BARCELONA.compact = {
     },
     "bar-bilbao": {
       "street": "Carrer de Bilbao, 18",
-      "neighborhood": null,
+      "neighborhood": "el Poblenou",
       "postalCode": "08005",
       "verifiedOn": "2026-10-31",
       "sources": [
-        "https://www.google.com/maps/search/?api=1&query=Bar%20Bilbao%20Carrer%20de%20Bilbao%2C%2018%20Barcelona"
+        "https://www.google.com/maps/search/?api=1&query=Bar%20Bilbao%20Carrer%20de%20Bilbao%2C%2018%20Barcelona",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=119.BARCELONA.42",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41"
       ],
-      "pending": [
-        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
-      ]
+      "pending": [],
+      "geographyVerification": {
+        "publisher": "Ajuntament de Barcelona / CartoBCN",
+        "checkedOn": "2026-10-31",
+        "method": "Exact municipal street name + numeric postal number + blank suffix. BARRI joined to official administrative polygons. No neighborhood inferred from commercial name or postcode.",
+        "municipalRecordId": 69608,
+        "streetCode": "042306",
+        "number": 18,
+        "neighborhoodCode": "68"
+      }
     },
     "bar-cafeteria-panes": {
       "street": "Gran Via de les Corts Catalanes, 1037",
-      "neighborhood": null,
+      "neighborhood": "Sant Martí de Provençals",
       "postalCode": "08020",
       "verifiedOn": "2026-10-31",
       "sources": [
-        "https://www.google.com/maps/search/?api=1&query=Bar%20%C2%B7%20Cafeteria%20Panes%20Gran%20Via%20de%20les%20Corts%20Catalanes%2C%201037%20Barcelona"
+        "https://www.google.com/maps/search/?api=1&query=Bar%20%C2%B7%20Cafeteria%20Panes%20Gran%20Via%20de%20les%20Corts%20Catalanes%2C%201037%20Barcelona",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=119.BARCELONA.42",
+        "https://w20.bcn.cat/CartoBCN/getFile.ashx?prod=102.BARCELONA.41"
       ],
-      "pending": [
-        "Administrative neighborhood not verified. Municipal address API unavailable (502/timeout); district is not used as neighborhood."
-      ]
+      "pending": [],
+      "geographyVerification": {
+        "publisher": "Ajuntament de Barcelona / CartoBCN",
+        "checkedOn": "2026-10-31",
+        "method": "Exact municipal street name + numeric postal number + blank suffix. BARRI joined to official administrative polygons. No neighborhood inferred from commercial name or postcode.",
+        "municipalRecordId": 153164,
+        "streetCode": "169409",
+        "number": 1037,
+        "neighborhoodCode": "72"
+      }
     }
   },
   "translations": {
