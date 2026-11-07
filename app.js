@@ -10,6 +10,34 @@
     return node;
   }
 
+  // Use the verified address neighborhoods, not legacy place fields or informal zones.
+  const districtByNeighborhood = new Map([
+    ['el Poblenou', 'Sant Martí'],
+    ['el Parc i la Llacuna del Poblenou', 'Sant Martí'],
+    ['Provençals del Poblenou', 'Sant Martí'],
+    ['Sant Martí de Provençals', 'Sant Martí'],
+    ['el Fort Pienc', 'Eixample']
+  ]);
+  const directoryText = {
+    ca: { district: 'Districte', neighborhood: 'Barri', help: 'Obre un districte i després un barri per veure les fitxes.', unknownDistrict: 'Districte pendent de confirmar', unknownNeighborhood: 'Barri pendent de confirmar' },
+    es: { district: 'Distrito', neighborhood: 'Barrio', help: 'Abre un distrito y después un barrio para ver las fichas.', unknownDistrict: 'Distrito pendiente de confirmar', unknownNeighborhood: 'Barrio pendiente de confirmar' },
+    en: { district: 'District', neighborhood: 'Neighborhood', help: 'Open a district, then a neighborhood to see the listings.', unknownDistrict: 'District to be confirmed', unknownNeighborhood: 'Neighborhood to be confirmed' }
+  };
+
+  function revealLinkedPlace() {
+    let id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+    if (!places.some(place => place.id === id)) return;
+    const target = document.getElementById(id);
+    if (!target) return;
+    let ancestor = target.parentElement;
+    while (ancestor) {
+      if (ancestor.tagName === 'DETAILS') ancestor.open = true;
+      ancestor = ancestor.parentElement;
+    }
+    target.scrollIntoView();
+  }
+
   function render(language, announce = false) {
     const t = { ...translations[language], ...compact.translations[language] };
     document.documentElement.lang = language;
@@ -20,7 +48,10 @@
     document.querySelectorAll('[data-language]').forEach(button => {
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
     });
-    list.replaceChildren(...places.map(place => {
+    const labels = directoryText[language];
+    document.getElementById('directory-help').textContent = labels.help;
+    const expanded = new Set(Array.from(list.querySelectorAll('details[open]'), node => node.dataset.group));
+    const cards = new Map(places.map(place => {
       const summary = compact.summaries[place.id];
       const location = compact.addresses[place.id];
       const item = element('li');
@@ -28,7 +59,7 @@
       card.setAttribute('aria-labelledby', place.id);
       const heading = element('div', null, 'place-heading');
       const identity = element('div');
-      const name = element('h3', place.name);
+      const name = element('h5', place.name);
       name.id = place.id;
       if (place.id === 'restaurant-muc') {
         const [restaurant, hotel] = place.name.split(' · ');
@@ -61,7 +92,44 @@
       link.append(arrow, element('span', ` — ${place.name}; ${t.newTab}`, 'sr-only'));
       card.append(details, link);
       item.append(card);
-      return item;
+      return [place.id, item];
+    }));
+    const districts = new Map();
+    for (const place of places) {
+      const neighborhood = compact.addresses[place.id].neighborhood || '';
+      const district = districtByNeighborhood.get(neighborhood) || '';
+      if (!districts.has(district)) districts.set(district, new Map());
+      const neighborhoods = districts.get(district);
+      if (!neighborhoods.has(neighborhood)) neighborhoods.set(neighborhood, []);
+      neighborhoods.get(neighborhood).push(place);
+    }
+    function group(name, label, count, key, headingTag) {
+      const details = element('details', null, 'directory-group');
+      details.dataset.group = key;
+      details.open = expanded.has(key);
+      const summary = element('summary');
+      const heading = element(headingTag, null, 'group-heading');
+      heading.append(element('span', label, 'group-label'), document.createTextNode(' '));
+      const title = element('span', name, 'group-name');
+      if (name !== labels.unknownDistrict && name !== labels.unknownNeighborhood) title.lang = 'ca';
+      heading.append(title, element('span', `${count} WC`, 'group-count'));
+      summary.append(heading);
+      details.append(summary);
+      return details;
+    }
+    list.replaceChildren(...Array.from(districts, ([district, neighborhoods]) => {
+      const count = Array.from(neighborhoods.values()).reduce((sum, entries) => sum + entries.length, 0);
+      const outer = group(district || labels.unknownDistrict, labels.district, count, `district:${district}`, 'h3');
+      const body = element('div', null, 'neighborhoods');
+      for (const [neighborhood, entries] of neighborhoods) {
+        const inner = group(neighborhood || labels.unknownNeighborhood, labels.neighborhood, entries.length, `neighborhood:${district}:${neighborhood}`, 'h4');
+        const items = element('ul', null, 'places');
+        items.append(...entries.map(place => cards.get(place.id)));
+        inner.append(items);
+        body.append(inner);
+      }
+      outer.append(body);
+      return outer;
     }));
     if (announce) document.getElementById('language-status').textContent = t.languageChanged;
   }
@@ -70,4 +138,6 @@
     button.addEventListener('click', () => render(button.dataset.language, true));
   });
   render('ca');
+  revealLinkedPlace();
+  window.addEventListener('hashchange', revealLinkedPlace);
 })();

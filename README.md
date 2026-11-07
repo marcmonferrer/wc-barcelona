@@ -1,3 +1,21 @@
+## Districtes i barris · 7 de novembre de 2026
+
+Navegació en dos nivells: obrir un districte, després un barri oficial, amb recompte de WC. Els grups comencen plegats. Les fitxes conserven tot el contingut, avisos, adreces, enllaços i estil; cada establiment apareix una sola vegada. Els títols de les fitxes passen a h5 per mantenir la jerarquia h2 → h3 (districte) → h4 (barri) → h5 (fitxa).
+
+- Sant Martí: 20 fitxes. El Poblenou 14, el Parc i la Llacuna del Poblenou 4, Provençals del Poblenou 1 i Sant Martí de Provençals 1.
+- Eixample: 1 fitxa, el Fort Pienc.
+- La classificació utilitza els barris de `compact.addresses`, amb les fonts municipals ja documentades a `data.js`. No es dedueix cap zona informal de Glòries ni es modifiquen les dades originals. Si un barri futur no té districte assignat, es conserva la fitxa en un grup pendent de confirmar.
+- Controls natius details/summary amb Retorn, Espai, Tab i focus visible. Els grups oberts es mantenen en canviar CA/ES/EN. Els enllaços directes a una fitxa obren els seus dos grups.
+- Sense dependències, compilació ni serveis nous. Canvis limitats a app.js, index.html, styles.css, aquest README i tests/directory.test.cjs. Analítica i privacitat preservades.
+
+### Validació
+
+- `node --check app.js`, `node --check data.js`, `node --check analytics.js`, `node tests/directory.test.cjs`, `git diff --check`.
+- La prova Node compara les 21 fitxes completes amb la versió base 0878c56 en els tres idiomes (normalitzant únicament h5/h3), comprova recomptes, absència de duplicats, retenció de grups oberts i fallback. També comprova que les dades i els tres fitxers d'analítica siguin idèntics a la base.
+- Chrome local: obertura i tancament repetits amb Retorn/Espai, focus i jerarquia accessibles, llengües i retenció d'estat, enllaç directe a La Higuera després de recarregar. Cap error o avís de consola capturat.
+- CA/ES/EN a 320 px CSS reals: 21 fitxes, 7 grups oberts, 63 definicions no buides, clientWidth = scrollWidth = 301 px. A 1280 px: clientWidth = scrollWidth = 1261 px. La captura parcial confirma el focus i la disposició mòbil; la captura llarga va fallar i no acredita una revisió visual completa.
+- No provat: lector de pantalla real, telèfon físic, zoom real al 200% ni revisió visual completa de totes les fitxes. No hi ha lint, typecheck o build local configurats.
+
 ## V0.3 — Vuit experiències personals · 20 d’octubre de 2026
 
 Actualització de contingut autoritzada per Marc: DESPACITO, L’OVELLA NEGRA MARINA, BEERCELONA BAR, BITÀCORA POBLENOU i BAR TRÈBOL s’afegeixen a les tres fitxes originals. Aquesta secció descriu la versió actual; les seccions v0.2 i anteriors són històriques.
